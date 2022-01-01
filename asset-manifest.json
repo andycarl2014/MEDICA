@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/bagpl/static/js/main.ed8f6050.js",
+    "main.js": "/bagpl/static/js/main.f026d084.js",
     "index.html": "/bagpl/index.html",
-    "main.ed8f6050.js.map": "/bagpl/static/js/main.ed8f6050.js.map"
+    "main.f026d084.js.map": "/bagpl/static/js/main.f026d084.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed8f6050.js"
+    "static/js/main.f026d084.js"
   ]
 }
