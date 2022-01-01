@@ -15,8 +15,8 @@ function Navbarr() {
 					></img>
 				</Navbar.Brand>
 				<Nav className='me-auto'>
-					<Nav.Link href='/bagpl/dashboard'>Home</Nav.Link>
-					<Nav.Link href='/bagpl/profile'>Profile</Nav.Link>
+					<Nav.Link href='/#/dashboard'>Home</Nav.Link>
+					<Nav.Link href='/#/profile'>Profile</Nav.Link>
 					<Nav.Link href='#' onClick={logout}>
 						Logout
 					</Nav.Link>
