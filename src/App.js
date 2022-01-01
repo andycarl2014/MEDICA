@@ -1,23 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-function App() {
-	return (
-		<div>
-			<nav>
-				<ul id='navigation'>
-					<li>
-						<Link to='/'>Home</Link>
-					</li>
-					<li>
-						<Link to='/about'>About</Link>
-					</li>
-					<li>
-						<Link to='/contact'>Contact</Link>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	);
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './Components/Dashboard/Dashboard';
+import Home from './Components/Home/Home';
+import Login from './Components/Login/Login';
+import Navbarr from './Components/Navbar/Navbar';
+import Register from './Components/Register/Register';
+class App extends React.Component {
+	render() {
+		return (
+			<div className='App'>
+				<Router>
+					<Navbarr />
+					<Routes>
+						<Route exact path='/' element={<Home />} />
+						<Route exact path='/register' element={<Register />} />
+						<Route exact path='/login' element={<Login />} />
+						<Route exact path='/dashboard' element={<Dashboard />} />
+						<Route exact path='/home' element={<Home />} />
+					</Routes>
+				</Router>
+			</div>
+		);
+	}
 }
 
 export default App;
