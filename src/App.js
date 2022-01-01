@@ -9,14 +9,14 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App'>
-				<Router>
+				<Router basename='/bagpl'>
 					<Navbarr />
 					<Routes>
-						<Route exact path='/' element={<Home />} />
-						<Route exact path='/register' element={<Register />} />
-						<Route exact path='/login' element={<Login />} />
-						<Route exact path='/dashboard' element={<Dashboard />} />
-						<Route exact path='/home' element={<Home />} />
+						<Route exact path='bagpl/' element={<Home />} />
+						<Route exact path='bagpl/register' element={<Register />} />
+						<Route exact path='bagpl/login' element={<Login />} />
+						<Route exact path='bagpl/dashboard' element={<Dashboard />} />
+						<Route exact path='bagpl/home' element={<Home />} />
 					</Routes>
 				</Router>
 			</div>

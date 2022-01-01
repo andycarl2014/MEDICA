@@ -6,7 +6,7 @@ function Navbarr() {
 	return (
 		<Navbar className='navbar navbar-expand-md navbar-dark fixed-top bg-dark'>
 			<Container>
-				<Navbar.Brand href='/dashboard'>
+				<Navbar.Brand href='/bagpl/dashboard'>
 					<img
 						src={logo1}
 						alt='logo'
@@ -15,8 +15,8 @@ function Navbarr() {
 					></img>
 				</Navbar.Brand>
 				<Nav className='me-auto'>
-					<Nav.Link href='/dashboard'>Home</Nav.Link>
-					<Nav.Link href='/profile'>Profile</Nav.Link>
+					<Nav.Link href='/bagpl/dashboard'>Home</Nav.Link>
+					<Nav.Link href='/bagpl/profile'>Profile</Nav.Link>
 					<Nav.Link href='#' onClick={logout}>
 						Logout
 					</Nav.Link>
