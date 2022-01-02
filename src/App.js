@@ -9,7 +9,7 @@ import Register from './Components/Register/Register';
 class App extends React.Component {
 	render() {
 		return (
-			<div className='App'>
+			<div className='App container'>
 				<Router basename='/'>
 					<Navbarr />
 					<Routes>
