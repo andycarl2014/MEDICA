@@ -1,7 +1,46 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router';
+import { auth, db } from '../extras/db/firebase';
 
-export default class Dashboard extends Component {
-	render() {
-		return <div>dashboard</div>;
+function Dashboard() {
+	const [user, loading] = useAuthState(auth);
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [cnp, setCNP] = useState('');
+	const navigate = useNavigate();
+
+	const fetchUserDetails = newFunction();
+
+	useEffect(() => {
+		if (loading) return;
+		if (!user) return navigate('/', { replace: true });
+		fetchUserDetails();
+	}, [user, loading, fetchUserDetails, navigate]);
+
+	return (
+		<div id='underNav'>
+			<p style={{ margin: '150px' }}>Salut {user.displayName}! Ce mai faci?</p>
+		</div>
+	);
+	function loguser(e) {}
+	function newFunction() {
+		return async () => {
+			try {
+				const query = await db
+					.collection('users')
+					.where('uid', '==', user?.uid)
+					.get();
+				const data = query.docs[0].data();
+
+				setName(data.name);
+				setEmail(data.email);
+			} catch (err) {
+				console.error(err);
+				alert('An error occured while fetching user data');
+			}
+		};
 	}
 }
+
+export default Dashboard;
