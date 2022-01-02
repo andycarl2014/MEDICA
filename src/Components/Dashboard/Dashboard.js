@@ -7,20 +7,18 @@ function Dashboard() {
 	const [user, loading] = useAuthState(auth);
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [cnp, setCNP] = useState('');
+
 	const navigate = useNavigate();
 
 	const fetchUserDetails = newFunction();
 
 	useEffect(() => {
 		if (loading) return;
-		if (!user) return navigate('/', { replace: true });
+		if (!user) return navigate('/home', { replace: true });
 		fetchUserDetails();
 	}, [user, loading, fetchUserDetails, navigate]);
 
-	return (
-		<p style={{ margin: '150px' }}>Salut {user.displayName}! Ce mai faci?</p>
-	);
+	return <p style={{ margin: '150px' }}>Salut {name}! Ce mai faci?</p>;
 
 	function newFunction() {
 		return async () => {
