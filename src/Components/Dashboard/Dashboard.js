@@ -18,11 +18,9 @@ function Dashboard() {
 		fetchUserDetails();
 	}, [user, loading, fetchUserDetails, navigate]);
 
-	if (user)
-		return (
-			<p style={{ margin: '150px' }}>Salut {user.displayName}! Ce mai faci?</p>
-		);
-	return <p style={{ margin: '150px' }}>Salut! Inca nu esti logat!</p>;
+	return (
+		<p style={{ margin: '150px' }}>Salut {user.displayName}! Ce mai faci?</p>
+	);
 
 	function newFunction() {
 		return async () => {
