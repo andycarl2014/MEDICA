@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/bagpl/static/css/main.f96d38f5.css",
-    "main.js": "/bagpl/static/js/main.41b0345a.js",
+    "main.js": "/bagpl/static/js/main.c92ba317.js",
+    "static/media/google.png": "/bagpl/static/media/google.6bc7d49355c4e25579a0.png",
     "index.html": "/bagpl/index.html",
     "main.f96d38f5.css.map": "/bagpl/static/css/main.f96d38f5.css.map",
-    "main.41b0345a.js.map": "/bagpl/static/js/main.41b0345a.js.map"
+    "main.c92ba317.js.map": "/bagpl/static/js/main.c92ba317.js.map"
   },
   "entrypoints": [
     "static/css/main.f96d38f5.css",
-    "static/js/main.41b0345a.js"
+    "static/js/main.c92ba317.js"
   ]
 }
