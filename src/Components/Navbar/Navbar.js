@@ -1,6 +1,6 @@
 import React from 'react';
 import logo1 from '../../images/logo2.png';
-import { logout } from '../db/firebase';
+import { logout } from '../extras/db/firebase';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 function Navbarr() {
 	return (
