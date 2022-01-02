@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MEDICA/static/css/main.05510689.css",
-    "main.js": "/MEDICA/static/js/main.ecb7f41f.js",
+    "main.js": "/MEDICA/static/js/main.d0f39871.js",
     "static/media/eu.png": "/MEDICA/static/media/eu.917b9aa02c6a29dc7dd5.png",
     "static/media/google.png": "/MEDICA/static/media/google.6bc7d49355c4e25579a0.png",
     "index.html": "/MEDICA/index.html",
     "main.05510689.css.map": "/MEDICA/static/css/main.05510689.css.map",
-    "main.ecb7f41f.js.map": "/MEDICA/static/js/main.ecb7f41f.js.map"
+    "main.d0f39871.js.map": "/MEDICA/static/js/main.d0f39871.js.map"
   },
   "entrypoints": [
     "static/css/main.05510689.css",
-    "static/js/main.ecb7f41f.js"
+    "static/js/main.d0f39871.js"
   ]
 }
