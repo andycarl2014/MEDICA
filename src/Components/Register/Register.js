@@ -28,7 +28,7 @@ const Register = () => {
 	return (
 		<div id='loginform'>
 			<h2 id='headerTitle'>Register</h2>
-			<div className='row row2'>
+			<div className='row '>
 				<input
 					type='text'
 					value={name}
@@ -36,7 +36,7 @@ const Register = () => {
 					placeholder='Full Name'
 				/>
 			</div>
-			<div className='row row2'>
+			<div className='row '>
 				<input
 					type='text'
 					value={email}
@@ -44,7 +44,7 @@ const Register = () => {
 					placeholder='E-mail Address'
 				/>
 			</div>
-			<div className='row row2'>
+			<div className='row '>
 				<input
 					type='password'
 					value={password}
@@ -52,11 +52,11 @@ const Register = () => {
 					placeholder='Password'
 				/>
 			</div>
-			<div className='row row2' id='button'>
+			<div className='row ' id='button'>
 				<button onClick={register}>Register</button>
 			</div>
 
-			<div id='button' className='row'>
+			<div className='row' id='button'>
 				<a href='#/login'>Log In</a>
 			</div>
 			<OtherMethods />

@@ -3,6 +3,7 @@ body,
 .App {
 	height: 100%;
 	width: 100%;
+	font-size: 100%;
 }
 body {
 	padding-top: 180px;
@@ -11,6 +12,17 @@ body {
 	height: 100%;
 	width: 100%;
 }
+
+#loginform {
+	max-width: 500px;
+	min-width: 300px;
+	width: 30%;
+	height: 60%;
+	margin: 100px auto;
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
 .navbar-nav {
 	margin-right: 0 !important;
 }

@@ -14,7 +14,7 @@ function Navbarr() {
 						style={{ width: '150px', height: '150px' }}
 					></img>
 				</Navbar.Brand>
-				<Nav className='me-auto'>
+				<Nav>
 					<Nav.Link href='#/dashboard'>Home</Nav.Link>
 					<Nav.Link href='#/profile'>Profile</Nav.Link>
 					<Nav.Link href='#' onClick={logout}>
