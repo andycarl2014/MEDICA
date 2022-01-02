@@ -10,7 +10,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App container'>
-				<Router basename='/'>
+				<Router>
 					<Navbarr />
 					<Routes>
 						<Route exact path='/' element={<Home />} />
