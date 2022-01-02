@@ -163,3 +163,7 @@ a:hover {
 .navbar {
 	height: 100px;
 }
+.mijloc {
+	display: flex;
+	margin-top: 100px;
+}
