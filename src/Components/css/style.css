@@ -1,0 +1,16 @@
+html,
+body,
+.App {
+	height: 100%;
+	width: 100%;
+}
+body {
+	padding-top: 180px;
+}
+#root {
+	height: 100%;
+	width: 100%;
+}
+.navbar-nav {
+	margin-right: 0 !important;
+}
