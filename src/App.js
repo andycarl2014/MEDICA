@@ -6,6 +6,7 @@ import Login from './Components/Login/Login';
 import Navbarr from './Components/Navbar/Navbar';
 import Profile from './Components/Profile/Profile';
 import Register from './Components/Register/Register';
+
 class App extends React.Component {
 	render() {
 		return (

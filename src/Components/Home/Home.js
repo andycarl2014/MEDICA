@@ -6,10 +6,13 @@ class Home extends React.Component {
 			<div className='mijloc'>
 				<h1>
 					"Sănătatea e ca banii, niciodată nu vom avea o adevărată idee de
-					valoarea sa până când o vom pierde." Constantin Dragos
+					valoarea sa până când o vom pierde." <br />
 					<br />
-					PhD in Epidemiology and Biomedical Data Science
+					<h2>Constantin Dragos-Gabriel</h2>
+					<h4>PhD in Epidemiology and Biomedical Data Science</h4>
 				</h1>
+				<br />
+
 				<img src={eu} alt='tot eu' />
 			</div>
 		);
