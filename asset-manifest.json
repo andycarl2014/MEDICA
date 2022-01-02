@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bagpl/static/css/main.f96d38f5.css",
-    "main.js": "/bagpl/static/js/main.ab793bcd.js",
+    "main.js": "/bagpl/static/js/main.41b0345a.js",
     "index.html": "/bagpl/index.html",
     "main.f96d38f5.css.map": "/bagpl/static/css/main.f96d38f5.css.map",
-    "main.ab793bcd.js.map": "/bagpl/static/js/main.ab793bcd.js.map"
+    "main.41b0345a.js.map": "/bagpl/static/js/main.41b0345a.js.map"
   },
   "entrypoints": [
     "static/css/main.f96d38f5.css",
-    "static/js/main.ab793bcd.js"
+    "static/js/main.41b0345a.js"
   ]
 }
