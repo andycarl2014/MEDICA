@@ -6,6 +6,7 @@ body {
 }
 .App {
 	padding-top: 50px;
+	height: 100%;
 }
 #root {
 	height: 100%;
@@ -17,7 +18,7 @@ body {
 	min-width: 300px;
 	width: 30%;
 
-	margin: 100px auto;
+	margin: 11% auto;
 	background-color: #ffffff;
 	border-radius: 25px;
 	border: 1px solid black;
@@ -105,6 +106,7 @@ body {
 	cursor: pointer;
 	transition: opacity 0.25s ease-out;
 	text-align: center;
+	text-decoration: none;
 }
 a:hover {
 	opacity: 0.8;
@@ -114,6 +116,7 @@ a:hover {
 
 .row button:hover {
 	opacity: 0.8;
+	color: white;
 }
 
 #button {
@@ -161,9 +164,59 @@ a:hover {
 	margin-right: 0 !important;
 }
 .navbar {
-	height: 100px;
+	height: 135px;
 }
 .mijloc {
 	display: flex;
 	margin-top: 100px;
+}
+.dashUnderNav {
+	margin-top: 150px;
+	height: 75%;
+
+	box-shadow: 10px 10px 5px 12px grey;
+}
+.row2 {
+	display: flex;
+	height: 100%;
+}
+.column25 {
+	flex: 25%;
+	border-right: 1px solid black;
+}
+.column75 {
+	flex: 75%;
+}
+.profilePic {
+	margin: 20%;
+	border-radius: 50%;
+	border: 1px solid black;
+	height: 25%;
+	width: 60%;
+}
+.column50 {
+	display: flex;
+	flex-direction: column;
+	flex: 50%;
+}
+
+.frm {
+	margin-top: 2.5%;
+}
+.mrg {
+	padding-top: 2rem !important;
+}
+.mrg input {
+	margin-bottom: 5%;
+}
+.dreapta {
+	float: right;
+	margin-bottom: 0px !important;
+	width: 10%;
+	border-radius: 20%;
+	height: 25% !important;
+}
+.btnflex {
+	margin-top: 5%;
+	margin-right: 5%;
 }

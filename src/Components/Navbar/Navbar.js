@@ -19,7 +19,8 @@ export default function Navbarr() {
 						></img>
 					</Navbar.Brand>
 					<Nav>
-						<Nav.Link href='#/dashboard'>Home</Nav.Link>
+						<Nav.Link href='#/home'>Home</Nav.Link>
+						<Nav.Link href='#/dashboard'>Dashboard</Nav.Link>
 						<Nav.Link href='#/profile'>Profile</Nav.Link>
 						<Nav.Link href='#' onClick={logout}>
 							Logout
