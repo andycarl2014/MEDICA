@@ -1,11 +1,9 @@
-//import * as firebase from 'firebase/app';
-
 import firebase from 'firebase/compat/app';
 
 import 'firebase/compat/storage';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth';
 const firebaseConfig = {
 	apiKey: 'AIzaSyBLv182OoQ61G4SJSgpqKNgkhXbuU0Io04',
 	authDomain: 'licenta-auth.firebaseapp.com',

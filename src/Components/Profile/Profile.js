@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router';
-import { abcd, auth, db, updateUserDatabase } from '../extras/db/firebase';
+import { auth, db, updateUserDatabase } from '../extras/db/firebase';
 import { storage } from '../extras/db/firebase';
 import { ref, listAll } from 'firebase/storage';
 import noprof from '../../images/noprof.png';
