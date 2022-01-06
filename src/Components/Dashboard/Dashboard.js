@@ -3,9 +3,9 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router';
 import { auth, db } from '../extras/db/firebase';
 import fb from '../extras/images/fb.png';
+import FetchDataFromRSSFeed from '../News/News';
 
 function Dashboard() {
-	const [user, loading] = useAuthState(auth);
 	const [name, setName] = useState('');
 	const [phone, setPhone] = useState('');
 	const [country, setCountry] = useState('');
@@ -16,22 +16,17 @@ function Dashboard() {
 	const [email, setEmail] = useState('');
 
 	const navigate = useNavigate();
-
 	const fetchUserDetails = newFunction();
 
+	const [user, loading] = useAuthState(auth);
 	useEffect(() => {
 		if (loading) return;
 		if (!user) return navigate('/home', { replace: true });
 		fetchUserDetails();
 	}, [user, loading]);
 	return (
-		<div className='dashUnderNav'>
-			<div className='row2'>
-				<div className='column25'>
-					<img src={fb} className='profilePic' />
-				</div>
-				<div className='column75'>hello2</div>
-			</div>
+		<div className='dashUnderNav' style={{ boxShadow: 'none' }}>
+			<FetchDataFromRSSFeed />
 		</div>
 	);
 

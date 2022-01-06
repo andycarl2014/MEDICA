@@ -55,15 +55,15 @@ export default function Profile() {
 	}, [user, loading]);
 	function userUpdate() {
 		const data = {
-			user: user,
-			name: name,
-			age: age,
-			sex: sex,
-			degree: degree,
-			CNP: CNP,
-			email: email,
-			country: country,
-			phone: phone,
+			user: user || '',
+			name: name || '',
+			age: age || '',
+			sex: sex || '',
+			degree: degree || '',
+			CNP: CNP || '',
+			email: email || '',
+			country: country || '',
+			phone: phone || '',
 		};
 		updateUserDatabase(data);
 	}
@@ -117,7 +117,7 @@ export default function Profile() {
 									<label>Name</label>
 									<input
 										type='text'
-										value={name}
+										value={name || ''}
 										onChange={(e) => setName(e.target.value)}
 									/>
 								</div>

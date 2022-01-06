@@ -1,9 +1,11 @@
 //import * as firebase from 'firebase/app';
+
 import firebase from 'firebase/compat/app';
-import { getDatabase, ref, set } from 'firebase/database';
+
 import 'firebase/compat/storage';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 const firebaseConfig = {
 	apiKey: 'AIzaSyBLv182OoQ61G4SJSgpqKNgkhXbuU0Io04',
 	authDomain: 'licenta-auth.firebaseapp.com',
@@ -116,10 +118,15 @@ const abcd = async (user) => {};
 const logout = () => {
 	auth.signOut();
 };
+
+const abcd2 = onAuthStateChanged(auth, (user) => {
+	if (user) return 'user';
+});
 export {
 	auth,
 	db,
 	storage,
+	abcd2,
 	updateUserDatabase,
 	abcd,
 	signInWithGoogle,

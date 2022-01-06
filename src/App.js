@@ -1,12 +1,14 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Navbarr from './Components/Navbar/Navbar';
 import Profile from './Components/Profile/Profile';
+import News from './Components/News/News';
 import Register from './Components/Register/Register';
-import Upload from './Upload';
+import Profile2 from './Components/Profile/Profile2';
+
 class App extends React.Component {
 	render() {
 		return (
@@ -19,7 +21,8 @@ class App extends React.Component {
 						<Route exact path='/dashboard' element={<Dashboard />} />
 						<Route exact path='/home' element={<Home />} />
 						<Route exact path='/profile' element={<Profile />} />
-						<Route exact path='/upload' element={<Upload />} />
+						<Route exact path='/news' element={<News />} />
+						<Route exact path='/profile2' element={<Profile2 />} />
 						<Route path='/' element={<Home />} />
 					</Routes>
 				</Router>

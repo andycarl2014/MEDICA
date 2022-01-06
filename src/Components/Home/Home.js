@@ -1,5 +1,6 @@
 import React from 'react';
 import eu from '../../images/eu.png';
+
 class Home extends React.Component {
 	render() {
 		return (

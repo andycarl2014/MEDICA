@@ -20,6 +20,7 @@ export default function Navbarr() {
 					</Navbar.Brand>
 					<Nav>
 						<Nav.Link href='#/home'>Home</Nav.Link>
+						<Nav.Link href='#/news'>News</Nav.Link>
 						<Nav.Link href='#/dashboard'>Dashboard</Nav.Link>
 						<Nav.Link href='#/profile'>Profile</Nav.Link>
 						<Nav.Link href='#' onClick={logout}>
@@ -44,6 +45,7 @@ export default function Navbarr() {
 					<Nav>
 						<Nav.Link href='#/login'>Log In</Nav.Link>
 						<Nav.Link href='#/register'>Register</Nav.Link>
+						<Nav.Link href='#/news'>News</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>
